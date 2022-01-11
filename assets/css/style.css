@@ -102,7 +102,7 @@ main {
 section {
   border-radius: 10px;
   background: white;
-  margin: -13% 7% 0%;
+  margin: -5% 7% 0%;
 }
 
 section>img {
@@ -113,7 +113,7 @@ section>img {
 }
 
 .details img:nth-of-type(1) {
-  width: 50px;
+  width: 35px;
   border-radius: 50%;
 
 }
@@ -128,11 +128,19 @@ section>img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4% 0;
+  margin: 10% 0 6%;
 }
 
 .name {
   padding: 0 25% 0% 0;
+}
+
+.name p:nth-of-type(1) {
+  color: #474955;
+}
+
+.name p:nth-of-type(2) {
+  color: #abafb7;
 }
 
 h1 {
