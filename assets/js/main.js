@@ -1,4 +1,5 @@
 let button = document.getElementById("checkbox1")
+let button2 = document.getElementById("checkbox2")
 let firstContainer = document.getElementById("firstContainer")
 let secondContainer = document.getElementById("secondContainer")
 let desktopContainer = document.getElementById("socialMedia")
