@@ -98,13 +98,13 @@ main {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-section {
+main section {
   border-radius: 10px;
   background: white;
   margin: 0% 7% 0%;
 }
 
-section>img {
+main section>img {
   border-radius: 10px 10px 0 0;
   margin: 0 0 0% 0;
   width: 100%;
@@ -155,14 +155,14 @@ section>img {
   color: #abafb7;
 }
 
-h1 {
+.mobile div h1 {
   margin: 9% 0 0 10%;
   font-size: 2.5vh;
   color: #52555e;
   font-weight: lighter;
 }
 
-p {
+.mobile div p {
   margin: 2% 9% 0 10%;
   color: #7b8087;
   font-size: 2.1vh;
@@ -208,50 +208,109 @@ Checkboxen
   display: none;
 }
 
+.desktop {
+  display: none;
+}
+
 @media (min-width: 1440px) {
 
-  section {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 15px;
-    height: 40%;
-    width: 55%;
+    background: #ffffff;
+    border-radius: 10px;
+    width: 52%;
+    height: 36%;
     margin: 0 auto;
   }
 
-  section img {
+  .leftContainer img {
+    border-radius: 10px 0 0 10px;
     height: 100%;
-    width: 40%;
-    border-radius: 15px 0 0 15px;
+    width: 725px;
   }
 
-  h1 {
-    margin: 8% 0 0 5%;
-    font-size: 2.5vh;
-    color: #52555e;
-    font-weight: lighter;
+  .leftContainer {
+    background: url("../img/drawers.jpg") left/cover no-repeat;
+    height: 100%;
+    width: 94%;
+    border-radius: 10px 0 0 10px;
   }
 
-  p {
-    margin: 2% 9% 0 5%;
-    color: #7b8087;
-    font-size: 2.1vh;
-    padding: 0 0 5% 0;
+  .textContainer {
+    margin: 8% 7% 0 9%;
   }
 
-  .details {
-    margin: 4% 0 4%;
+  .textContainer h1 {
+    margin: 0 0 3% 0;
+    font-size: 2.4vh;
+    word-spacing: 1px;
+    color: #4f535c;
   }
 
-  .details img:nth-of-type(1) {
-    margin-left: -100px;
-    margin-right: 20px;
+  .textContainer p {
+    font-size: 1.8vh;
+    color: #a9aeba;
+  }
+
+  .michelle {
+    display: flex;
+    align-items: center;
+    margin: 3% 0 0 0;
+  }
+
+  .michelle>img {
+    border-radius: 50%;
     height: 50px;
-    width: 50px;
+    margin: 0 3% 0 8%;
   }
 
-  .name p {
-    margin-left: 13px;
+  .michelleName {
+    width: 275px;
+  }
+
+  .michelleName p {
+    color: #838892;
+  }
+
+  .michelleName span {
+    color: #c3c8cf;
+  }
+
+  .rightContainer {
+    position: relative;
+  }
+
+  .michelleShare {
+    position: absolute;
+    display: flex;
+    top: 135px;
+    right: -70px;
+    background: #49556c;
+    padding: 4% 0;
+    border-radius: 10px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .michelleShare span {
+    margin: 0 3% 0 12%;
+    letter-spacing: 4px;
+    color: #8d99af;
+  }
+
+  .socialMedia {
+    width: 190px;
+    display: flex;
+    text-align: center;
+  }
+
+  .socialMedia img {
+    margin-left: 15px;
   }
 }
