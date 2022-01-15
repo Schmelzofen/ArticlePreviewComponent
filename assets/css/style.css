@@ -292,6 +292,7 @@ Checkboxen
     background: #49556c;
     padding: 4% 0;
     border-radius: 10px;
+
   }
 
   .hide {
@@ -308,9 +309,21 @@ Checkboxen
     width: 190px;
     display: flex;
     text-align: center;
+    z-index: 2;
   }
 
   .socialMedia img {
     margin-left: 15px;
+  }
+
+  .square {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background: #49556b;
+    transform: rotate(45deg);
+    right: 105px;
+    top: 13px;
+    z-index: 1;
   }
 }
